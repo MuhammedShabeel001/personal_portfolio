@@ -21,10 +21,10 @@ class TopBar extends ConsumerWidget {
     return GlossyContainer(
       border: Border.all(style: BorderStyle.none),
       width: 100.w,
+      height: 7.h,
       color: Theme.of(context).brightness == Brightness.dark
           ? AppColors.cardBackground
           : AppColors.background,
-      height: 7.h,
       borderRadius: BorderRadius.circular(10),
       child: Padding(
         padding: const EdgeInsets.all(8.0),

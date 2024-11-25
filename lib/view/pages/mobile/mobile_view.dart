@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:sizer/sizer.dart';
 
-import '../../../core/widgets/main_card.dart';
+import '../../../core/widgets/about_card.dart';
 import '../../../core/widgets/top_bar.dart';
 
 class MobileView extends StatelessWidget {
@@ -22,10 +22,10 @@ class MobileView extends StatelessWidget {
           children: [
             const Gap(12), 
             const TopBar(),
+            // const Gap(12),
+            // const MainCard(),
             const Gap(12),
-            const MainCard(),
-            const Gap(12),
-            Container(color: Colors.blue,height: 25.h,child: Center(child: Text('ggttffee'),),),
+            const AboutCard(),
             const Gap(12),
             Container(color: Colors.red,height: 8.h,),
             const Gap(12),
@@ -42,7 +42,3 @@ class MobileView extends StatelessWidget {
     );
   }
 }
-
-
-
-
