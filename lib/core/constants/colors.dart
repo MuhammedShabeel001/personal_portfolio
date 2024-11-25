@@ -1,7 +1,9 @@
-// import 'package:flutter/material.dart';
 
-class Colors {
+import 'package:flutter/material.dart';
 
-  // static const Color primary = Colors.color
+class AppColors {
+
+  static const Color background = Colors.black ; 
+  static const Color cardBackground = Colors.white ; 
 
 }
