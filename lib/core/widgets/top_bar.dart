@@ -15,14 +15,15 @@ class TopBar extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-
     final themeNotifier = ref.read(themeNotifierProvider.notifier);
     final themeMode = ref.watch(themeNotifierProvider);
-    
+
     return GlossyContainer(
-      border: Border.all(width: 0, style: BorderStyle.none),
+      border: Border.all(style: BorderStyle.none),
       width: 100.w,
-      color: Theme.of(context).brightness == Brightness.dark ? AppColors.cardBackground : AppColors.background, 
+      color: Theme.of(context).brightness == Brightness.dark
+          ? AppColors.cardBackground
+          : AppColors.background,
       height: 7.h,
       borderRadius: BorderRadius.circular(10),
       child: Padding(
@@ -30,23 +31,31 @@ class TopBar extends ConsumerWidget {
         child: Row(
           children: [
             const Gap(10),
-            SizedBox(width: 30,child: SvgPicture.asset(Theme.of(context).brightness == Brightness.dark ? Assets.logoDark : Assets.logoLight),), 
+            SizedBox(
+              width: 30,
+              child: SvgPicture.asset(
+                  Theme.of(context).brightness == Brightness.dark
+                      ? Assets.logoDark
+                      : Assets.logoLight),
+            ),
             const Spacer(),
-            SizedBox(width: 60,child: 
-            
-            InkWell(
-              onTap: () {
-                // Toggle the theme using ThemeNotifier
-                themeNotifier.toggleTheme();
-              },
-              child: SizedBox(
-                width: 60,
-                child: SvgPicture.asset(
-                  themeMode == ThemeMode.dark
-                      ? Assets.lightMode // Icon for light mode
-                      : Assets.darkMode, // Icon for dark mode
+            SizedBox(
+              width: 60,
+              child: InkWell(
+                onTap: () {
+                  // Toggle the theme using ThemeNotifier
+                  themeNotifier.toggleTheme();
+                },
+                child: SizedBox(
+                  width: 60,
+                  child: SvgPicture.asset(
+                    themeMode == ThemeMode.dark
+                        ? Assets.lightMode // Icon for light mode
+                        : Assets.darkMode, // Icon for dark mode
+                  ),
                 ),
-              ),),)
+              ),
+            )
           ],
         ),
       ),

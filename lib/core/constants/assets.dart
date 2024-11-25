@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 class Assets {
   
@@ -11,6 +10,6 @@ class Assets {
   static String darkMode = 'assets/icons/dark_mode.svg';
 
   //images
-  // static String iconName = '';
+  static String myImage = 'assets/images/mypic.jpg';
 
 }

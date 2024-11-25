@@ -1,4 +1,10 @@
-class TextStyle {
+import 'package:flutter/material.dart';
+import 'package:personal_portfolio/core/constants/colors.dart';
+import 'package:sizer/sizer.dart';
 
-  // static TextStyle styleName = const 
+class AppTextStyle {
+
+  static TextStyle nameTitle = TextStyle(fontSize: 20.sp, fontWeight: FontWeight.bold, color: AppColors.textColor);
+  static TextStyle subTitle = TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold, color: AppColors.subTextColor);
+  static TextStyle jobTitle = TextStyle(fontSize: 22.sp, fontWeight: FontWeight.bold, color: AppColors.accentTextColor);
 }

@@ -21,9 +21,14 @@ class MyApp extends ConsumerWidget {
         return MaterialApp(
           title: 'Pesonal Portfolio',
           theme: ThemeData(
-              brightness: Brightness.light, fontFamily: 'SpaceGrotesk'),
-          darkTheme: ThemeData.dark(),
-          themeMode: themeMode,
+            brightness: Brightness.light,
+            fontFamily: 'SpaceGrotesk',
+          ),
+          darkTheme: ThemeData(
+            brightness: Brightness.dark,
+            fontFamily: 'SpaceGrotesk',
+          ),
+          themeMode: themeMode, 
           debugShowCheckedModeBanner: false,
           initialRoute: Routes.home,
           onGenerateRoute: RouteManager.generateRoute,
