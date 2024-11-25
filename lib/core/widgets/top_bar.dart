@@ -25,31 +25,31 @@ class TopBar extends ConsumerWidget {
       color: Theme.of(context).brightness == Brightness.dark ? AppColors.cardBackground : AppColors.background, 
       height: 7.h,
       borderRadius: BorderRadius.circular(10),
-      // child: Padding(
-      //   padding: const EdgeInsets.all(8.0),
-      //   child: Row(
-      //     children: [
-      //       const Gap(10),
-      //       SizedBox(width: 30,child: SvgPicture.asset(Theme.of(context).brightness == Brightness.dark ? Assets.logoDark : Assets.logoLight),), 
-      //       const Spacer(),
-      //       SizedBox(width: 60,child: 
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          children: [
+            const Gap(10),
+            SizedBox(width: 30,child: SvgPicture.asset(Theme.of(context).brightness == Brightness.dark ? Assets.logoDark : Assets.logoLight),), 
+            const Spacer(),
+            SizedBox(width: 60,child: 
             
-      //       InkWell(
-      //         onTap: () {
-      //           // Toggle the theme using ThemeNotifier
-      //           themeNotifier.toggleTheme();
-      //         },
-      //         child: SizedBox(
-      //           width: 60,
-      //           child: SvgPicture.asset(
-      //             themeMode == ThemeMode.dark
-      //                 ? Assets.lightMode // Icon for light mode
-      //                 : Assets.darkMode, // Icon for dark mode
-      //           ),
-      //         ),),)
-      //     ],
-      //   ),
-      // ),
+            InkWell(
+              onTap: () {
+                // Toggle the theme using ThemeNotifier
+                themeNotifier.toggleTheme();
+              },
+              child: SizedBox(
+                width: 60,
+                child: SvgPicture.asset(
+                  themeMode == ThemeMode.dark
+                      ? Assets.lightMode // Icon for light mode
+                      : Assets.darkMode, // Icon for dark mode
+                ),
+              ),),)
+          ],
+        ),
+      ),
     );
   }
 }
