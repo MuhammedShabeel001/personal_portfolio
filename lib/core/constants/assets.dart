@@ -17,6 +17,12 @@ class Assets {
   static String git = 'assets/icons/git.svg';
   static String illustrator = 'assets/icons/illustrator.svg';
 
+  //Social icons
+  static String linkedIn = 'assets/icons/linkedin.svg';
+  static String whatsApp = 'assets/icons/whatsapp.svg';
+  static String gitHub = 'assets/icons/github.svg';
+  static String instagram = 'assets/icons/instagram.svg'; 
+
   //images
   static String myImage = 'assets/images/mypic.jpg';
 
