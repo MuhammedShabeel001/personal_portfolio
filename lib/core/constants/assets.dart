@@ -8,6 +8,9 @@ class Assets {
   //icons
   static String lightMode = 'assets/icons/light_mode.svg';
   static String darkMode = 'assets/icons/dark_mode.svg';
+  static String download = 'assets/icons/download.svg'; 
+  static String location = 'assets/icons/location.svg'; 
+  static String message = 'assets/icons/message.svg';  
 
   //Skill icons
   static String dart = 'assets/icons/dart.svg';

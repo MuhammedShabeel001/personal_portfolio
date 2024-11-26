@@ -28,7 +28,7 @@ class MainCard extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Expanded(
+          const Expanded(
             flex: 7,
             child: ClipRRect(),
           ),

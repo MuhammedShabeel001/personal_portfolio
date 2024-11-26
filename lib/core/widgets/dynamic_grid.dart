@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_glow/flutter_glow.dart';
 import 'package:glossy/glossy.dart';
 import 'package:personal_portfolio/data/model/grid_model.dart';
 import 'package:sizer/sizer.dart';
@@ -44,20 +43,20 @@ class DynamicGrid extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                GlowText(
+                Text(
                   item.experience.toString(),
-                  glowColor: cardColor,
-                  blurRadius: 30,
+                  // glowColor: cardColor,
+                  // blurRadius: 30,
                   style: TextStyle(
                     color: textColor,
                     fontWeight: FontWeight.bold,
                     fontSize: 30.sp,
                   ),
                 ),
-                GlowText(
+                Text(
                   item.title,
-                  glowColor: cardColor,
-                  blurRadius: 10,
+                  // glowColor: cardColor,
+                  // blurRadius: 10,
                   style: TextStyle(
                     color: textColor,
                     fontSize: 18.sp,
